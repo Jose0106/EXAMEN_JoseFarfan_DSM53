@@ -14,9 +14,9 @@ class Category extends Controller
      */
     public function index()
     {
-        //utilizar el orm eloquent de laravel
+        //para llamar todas nuestra categorias select * from categories ;
         $categories = Category::all();
-        //return response()->json([$categories]);
+        return response()->json(['categorias' => $categories]);
     }
 
     /**

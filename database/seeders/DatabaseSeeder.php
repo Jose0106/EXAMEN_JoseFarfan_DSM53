@@ -24,6 +24,6 @@ class DatabaseSeeder extends Seeder
         Post::factory(50)->create();
         /*PostTag::factory(50)->create();*/
         Tags::factory(50)->create();
-        Image::factory(50)->create();
+        Images::factory(50)->create();
     }
 }
