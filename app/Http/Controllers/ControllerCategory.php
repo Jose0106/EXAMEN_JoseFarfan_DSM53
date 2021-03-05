@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 //mandamos a llamar el modelo de categorias
-use App\Models\Caregory;
-class Category extends Controller
+use App\Models\Category;
+class ControllerCategory extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,9 +46,11 @@ class Category extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(ControllerCategory $category, $id)
     {
         //
+        $category = Category::findOrfail($id);
+        return response()->json(['categoria' => $category]);
     }
 
     /**

@@ -5,11 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class tags extends Model
+class Reparacion extends Model
 {
     use HasFactory;
-    protected $fileable = [
-        'name'
-    ];
 
+    protected $fillable = [
+        'nombre', 
+        'precio'
+    ]; 
+    
 }

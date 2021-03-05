@@ -22,8 +22,12 @@ class DatabaseSeeder extends Seeder
         User::factory(50)->create();
         Category::factory(50)->create();
         Post::factory(50)->create();
-        /*PostTag::factory(50)->create();*/
+        /*post_tag::factory(50)->create();*/
         Tags::factory(50)->create();
         Images::factory(50)->create();
+        Factura::factory(50)->create();
+        Reparacion::factory(50)->create();
+        Cliente::factory(50)->create();
+
     }
 }
